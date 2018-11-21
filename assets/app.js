@@ -43,7 +43,7 @@ console.log("-------------");
 function makeLine(length) {
   var line = "";
   for (var j = 1; j <= length; j++) {
-    line += "*"
+    line = line + "*"
   }
   return line + "\n";
 }
@@ -55,6 +55,11 @@ function buildTriangle(num) {
   return result;
 
 }
-console.log(buildTriangle(20));
+console.log(buildTriangle(10));
 
 console.log("------------------------------");
+
+let sayHello = function() {
+  return "hello my friend";
+}
+console.log(sayHello());
